@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-32">
+    <div class="px-8 mt-32">
         <div class="mx-auto overflow-hidden max-w-7xl">
             <div
                 class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"

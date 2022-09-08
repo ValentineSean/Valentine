@@ -1,6 +1,6 @@
 <template>
     <div class="bg-black">
-        <div class="relative overflow-hidden">
+        <div class="relative px-8 overflow-hidden">
             <main>
                 <!-- Feature section with grid -->
                 <div
@@ -98,7 +98,7 @@
                                                 >03.</span
                                             >
                                             <span class="text-2xl">
-                                                System Design</span
+                                                Systems Design</span
                                             >
                                         </div>
                                         <ChevronRightIcon
@@ -157,7 +157,7 @@ const features = [
         icon: LockClosedIcon,
     },
     {
-        name: 'System Design',
+        name: 'Systems Design',
         description:
             'Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores quinnnnn.',
         icon: RefreshIcon,

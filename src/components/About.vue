@@ -1,5 +1,5 @@
 <template>
-    <div class="my-16">
+    <div class="px-8 my-16">
         <main>
             <div class="relative">
                 <div class="lg:mx-auto lg:items-start">
