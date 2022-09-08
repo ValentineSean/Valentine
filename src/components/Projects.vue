@@ -4,10 +4,10 @@
             <div
                 class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
             >
-                <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                <h2 class="text-3xl font-extrabold tracking-tight sm:text-5xl">
                     My Projects
                 </h2>
-                <p class="text-xl text-gray-500">
+                <p class="text-2xl text-gray-500">
                     Take a look at some of the projects i have done
                 </p>
             </div>

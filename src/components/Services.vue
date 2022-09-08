@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black">
+    <div class="mt-16 bg-black">
         <div class="relative px-8 overflow-hidden">
             <main>
                 <!-- Feature section with grid -->
@@ -7,17 +7,16 @@
                     class="relative px-4 py-16 bg-black lg:px-0 sm:py-24 lg:py-32"
                 >
                     <div
-                        class="flex flex-col items-center mx-auto max-w-7xl md:flex-row"
+                        class="flex flex-col items-center mx-auto md:space-x-8 max-w-7xl md:flex-row"
                     >
                         <div class="flex flex-col items-start lg:w-1/2">
                             <p
-                                class="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
+                                class="mt-2 text-3xl font-extrabold tracking-tight text-[#F2F5EA] sm:text-5xl"
                             >
                                 What Services Do I Provide
                             </p>
-                            <p class="mt-5 text-xl text-gray-200 max-w-prose">
-                                I will help you with finding a solution and
-                                solve your problems
+                            <p class="mt-5 text-2xl text-[#F2F5EA] max-w-prose">
+                                Just tell me what you need
                             </p>
                             <a
                                 v-smooth-scroll="{
@@ -26,13 +25,13 @@
                                     easing: 'easeInOutCubic',
                                 }"
                                 href="#footer"
-                                class="inline-flex items-center px-16 py-4 mt-12 text-sm font-bold text-white bg-blue-500 hover:text-black hover:bg-white"
+                                class="inline-flex items-center px-16 py-4 mt-12 text-sm font-bold text-[#F2F5EA] bg-blue-500 hover:text-black hover:bg-white"
                             >
                                 Let's Talk
                             </a>
                         </div>
                         <div
-                            class="flex flex-col w-full mt-12 space-y-8 text-white lg:w-1/2"
+                            class="flex flex-col w-full mt-12 space-y-8 text-[#F2F5EA] lg:w-1/2"
                         >
                             <Disclosure v-slot="{ open }">
                                 <!-- Use the `open` state to conditionally change the direction of an icon. -->

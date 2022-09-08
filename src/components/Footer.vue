@@ -11,7 +11,7 @@
                     >
                         <h2
                             id="contact-heading"
-                            class="text-2xl font-extrabold text-white sm:text-3xl"
+                            class="text-3xl font-extrabold text-[#F2F5EA] sm:text-5xl"
                         >
                             Get in touch
                         </h2>
@@ -22,10 +22,10 @@
                                 v-for="item in contactDetails"
                                 :key="item.name"
                             >
-                                <h3 class="text-lg font-medium text-white">
+                                <h3 class="text-2xl font-medium text-[#F2F5EA]">
                                     {{ item.name }}
                                 </h3>
-                                <dl class="mt-2 text-base text-white">
+                                <dl class="mt-2 text-xl text-[#F2F5EA]">
                                     <div>
                                         <dt class="sr-only">Email</dt>
                                         <dd>
@@ -57,33 +57,22 @@ const contactDetails = [
     {
         name: 'WhatsApp',
         email: '',
-        telephone: '+1 (555) 123-4567',
+        telephone: '+263718787946',
     },
     {
         name: 'Calls',
         email: '',
-        telephone: '+1 (555) 123-4567',
+        telephone: '+263718787946',
     },
     {
         name: 'Email',
-        email: 'support@example.com',
-        telephone: '',
-    },
-    {
-        name: 'Second Email',
-        email: 'support@example.com',
+        email: 'seanchanengeta@gmail.com',
         telephone: '',
     },
 ]
 
 export default {
-    components: {
-        Popover,
-        PopoverButton,
-        PopoverPanel,
-        MenuIcon,
-        XIcon,
-    },
+    components: {},
     setup() {
         return {
             contactDetails,

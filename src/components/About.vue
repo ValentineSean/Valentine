@@ -8,19 +8,22 @@
                     >
                         <div class="pt-12 sm:pt-16 lg:pt-20">
                             <h2
-                                class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+                                class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl"
                             >
                                 About Me
                             </h2>
                             <div class="mt-6 space-y-6 text-gray-500">
-                                <p class="text-lg">
-                                    Sagittis scelerisque nulla cursus in enim
-                                    consectetur quam. Dictum urna sed
-                                    consectetur neque tristique pellentesque.
-                                    Blandit amet, sed aenean erat arcu morbi.
-                                    Cursus faucibus nunc nisl netus morbi vel
-                                    porttitor vitae ut. Amet vitae fames
-                                    senectus vitae.
+                                <p class="text-2xl">
+                                    - I'm an ambitious backend Software
+                                    Developer with a knack for solving complex
+                                    problems.
+                                    <br />
+                                    - Currently working as a full stack Software
+                                    Developer at Matsimba Technologies
+                                    (Zimbabwe).
+                                    <br />
+                                    - If you have a project in mind, don't
+                                    hesitate to get in touch
                                 </p>
                             </div>
                         </div>
@@ -28,7 +31,7 @@
                         <!-- Stats section -->
                         <div class="mt-10">
                             <h2
-                                class="my-8 text-xl font-extrabold tracking-tight text-gray-900"
+                                class="my-16 text-2xl font-semibold tracking-tight text-gray-900"
                             >
                                 My Experience
                             </h2>
@@ -36,44 +39,49 @@
                                 <div
                                     v-for="stat in stats"
                                     :key="stat.label"
-                                    class="pt-6 border-t-2 border-gray-100"
+                                    class="pt-6 border-t border-gray-200"
                                 >
                                     <dt
-                                        class="text-base font-medium text-gray-500"
+                                        class="text-xl font-medium text-gray-500"
                                     >
                                         {{ stat.label }}
                                     </dt>
                                     <dd
-                                        class="text-base font-medium tracking-tight text-gray-900"
+                                        class="text-xl font-medium tracking-tight text-gray-900"
                                     >
                                         {{ stat.value }}
                                     </dd>
                                     <dd
-                                        class="text-base font-medium tracking-tight text-gray-900"
+                                        class="text-xl font-medium tracking-tight text-gray-900"
                                     >
                                         {{ stat.company }}
                                     </dd>
                                 </div>
                             </dl>
                             <h2
-                                class="my-8 text-xl font-extrabold tracking-tight text-gray-900"
+                                class="my-16 text-2xl font-semibold tracking-tight text-gray-900"
                             >
                                 My Tools & Skills
                             </h2>
-                            <div class="mb-8 lg:items-center">
+                            <div class="mb-8 text-2xl lg:items-center">
                                 <div
                                     class="grid grid-cols-2 mt-12 md:grid-cols-3 lg:mt-0 lg:grid-cols-4"
                                 >
                                     <div
                                         v-for="logo in logos"
                                         :key="logo.name"
-                                        class="flex justify-center col-span-1 px-8 py-8 border bg-gray-50"
+                                        class="flex items-center justify-center col-span-1 px-8 py-8 border border-gray-200 group bg-gray-50"
                                     >
                                         <img
-                                            class="max-h-12"
+                                            class="duration-500 ease-in-out transform group-hover:hidden max-h-12"
                                             :src="logo.url"
                                             :alt="logo.name"
                                         />
+                                        <div
+                                            class="hidden text-xl font-bold group-hover:block"
+                                        >
+                                            {{ logo.name }}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -99,8 +107,21 @@ import mongo from '../assets/mongodb.svg'
 import docker from '../assets/docker.svg'
 
 const stats = [
-    { label: 'Founded', value: '2020-2021', company: 'adf' },
-    { label: 'Employees', value: '2021-2022', company: 'adf' },
+    {
+        label: 'Software Developer',
+        value: 'Sept 2021 - Present',
+        company: 'Matsimba Technologies ',
+    },
+    {
+        label: 'Internship',
+        value: 'Apr 2021 - July 2021',
+        company: 'POScloud Zimbabwe ',
+    },
+    {
+        label: 'Internship',
+        value: 'Nov 2020 - Mar 2021',
+        company: 'Matsimba Technologies',
+    },
 ]
 
 const logos = [

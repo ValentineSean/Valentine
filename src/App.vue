@@ -1,5 +1,5 @@
 <template>
-    <AppLayout>
+    <AppLayout class="bg-[#F2F5EA]">
         <router-view />
     </AppLayout>
 </template>
