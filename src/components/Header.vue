@@ -1,5 +1,5 @@
 <template>
-    <div class="relative overflow-hidden bg-[#F2F5EA] border">
+    <div class="relative overflow-hidden bg-[#F2F5EA] border min-h-[100vh]">
         <div class="relative flex flex-col pt-6 pb-16 sm:pb-24">
             <Popover>
                 <nav
