@@ -134,7 +134,7 @@
                         <p
                             class="mb-8 text-base text-gray-700 md:mb-8 sm:mt-0 sm:text-xl lg:text-lg xl:text-xl"
                         >
-                            Backend Developer
+                            Software Developer
                         </p>
                         <a
                             href="#projects"
