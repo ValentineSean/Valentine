@@ -15,7 +15,7 @@
                             >
                                 What Services Do I Provide
                             </p>
-                            <p class="mt-5 text-xl text-gray-500 max-w-prose">
+                            <p class="mt-5 text-xl text-gray-200 max-w-prose">
                                 I will help you with finding a solution and
                                 solve your problems
                             </p>
@@ -48,17 +48,17 @@
                                                 Backend Development</span
                                             >
                                         </div>
-                                        <ChevronRightIcon
+                                        <!-- <ChevronRightIcon
                                             :class="
                                                 open
                                                     ? 'rotate-[135deg] transform'
                                                     : ' rotate-[300deg] transform'
                                             "
                                             class="w-8 h-8"
-                                        />
+                                        /> -->
                                     </div>
                                 </DisclosureButton>
-                                <DisclosurePanel>No</DisclosurePanel>
+                                <!--  <DisclosurePanel>No</DisclosurePanel> -->
                             </Disclosure>
 
                             <Disclosure v-slot="{ open }">
@@ -75,17 +75,17 @@
                                                 Data Scraping</span
                                             >
                                         </div>
-                                        <ChevronRightIcon
+                                        <!-- <ChevronRightIcon
                                             :class="
                                                 open
                                                     ? 'rotate-[135deg] transform'
                                                     : ' rotate-[300deg] transform'
                                             "
                                             class="w-8 h-8"
-                                        />
+                                        /> -->
                                     </div>
                                 </DisclosureButton>
-                                <DisclosurePanel>No</DisclosurePanel>
+                                <!--  <DisclosurePanel>No</DisclosurePanel> -->
                             </Disclosure>
                             <Disclosure v-slot="{ open }">
                                 <!-- Use the `open` state to conditionally change the direction of an icon. -->
@@ -101,17 +101,17 @@
                                                 Systems Design</span
                                             >
                                         </div>
-                                        <ChevronRightIcon
+                                        <!-- <ChevronRightIcon
                                             :class="
                                                 open
                                                     ? 'rotate-[135deg] transform'
                                                     : ' rotate-[300deg] transform'
                                             "
                                             class="w-8 h-8"
-                                        />
+                                        /> -->
                                     </div>
                                 </DisclosureButton>
-                                <DisclosurePanel>No</DisclosurePanel>
+                                <!--  <DisclosurePanel>No</DisclosurePanel> -->
                             </Disclosure>
                         </div>
                     </div>
@@ -178,10 +178,8 @@ export default {
         DisclosurePanel,
     },
     setup() {
-        const open = ref(false)
         return {
             features,
-            open,
         }
     },
 }

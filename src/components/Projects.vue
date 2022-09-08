@@ -1,5 +1,5 @@
 <template>
-    <div class="px-8 mt-32">
+    <div class="px-8 mt-32 min-h-[100vh]">
         <div class="mx-auto overflow-hidden max-w-7xl">
             <div
                 class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
@@ -8,15 +8,17 @@
                     My Projects
                 </h2>
                 <p class="text-xl text-gray-500">
-                    Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum
-                    dolor ultricies donec risus sodales. Tempus quis et.
+                    Take a look at some of the projects i have done
                 </p>
             </div>
+            <div class="w-full my-32 text-center">
+                <span class="w-full text-xl font-bold"> Coming Soon ... </span>
+            </div>
 
-            <div
+            <!--      <div
                 class="grid grid-cols-2 mt-8 -mx-px border border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4"
             >
-                <div
+                 <div
                     v-for="product in products"
                     :key="product.id"
                     class="relative p-4 border-b border-r border-gray-200 group sm:p-6"
@@ -46,7 +48,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
