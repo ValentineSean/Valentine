@@ -1,62 +1,118 @@
 <template>
-    <div class="bg-white">
+    <div class="bg-black">
         <div class="relative overflow-hidden">
             <main>
                 <!-- Feature section with grid -->
-                <div class="relative py-16 bg-white sm:py-24 lg:py-32">
+                <div
+                    class="relative px-4 py-16 bg-black lg:px-0 sm:py-24 lg:py-32"
+                >
                     <div
-                        class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
+                        class="flex flex-col items-center mx-auto max-w-7xl md:flex-row"
                     >
-                        <p
-                            class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-                        >
-                            What Services Do I Provide
-                        </p>
-                        <p
-                            class="mx-auto mt-5 text-xl text-gray-500 max-w-prose"
-                        >
-                            Phasellus lorem quam molestie id quisque diam aenean
-                            nulla in. Accumsan in quis quis nunc, ullamcorper
-                            malesuada. Eleifend condimentum id viverra nulla.
-                        </p>
-                        <div class="mt-12">
-                            <div
-                                class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+                        <div class="flex flex-col items-start lg:w-1/2">
+                            <p
+                                class="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
                             >
-                                <div
-                                    v-for="feature in features"
-                                    :key="feature.name"
-                                    class="pt-6"
-                                >
+                                What Services Do I Provide
+                            </p>
+                            <p class="mt-5 text-xl text-gray-500 max-w-prose">
+                                I will help you with finding a solution and
+                                solve your problems
+                            </p>
+                            <a
+                                v-smooth-scroll="{
+                                    offset: -100,
+                                    duration: 500,
+                                    easing: 'easeInOutCubic',
+                                }"
+                                href="#footer"
+                                class="inline-flex items-center px-16 py-4 mt-12 text-sm font-bold text-white bg-blue-500 hover:text-black hover:bg-white"
+                            >
+                                Let's Talk
+                            </a>
+                        </div>
+                        <div
+                            class="flex flex-col w-full mt-12 space-y-8 text-white lg:w-1/2"
+                        >
+                            <Disclosure v-slot="{ open }">
+                                <!-- Use the `open` state to conditionally change the direction of an icon. -->
+                                <DisclosureButton class="py-2">
                                     <div
-                                        class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                                        class="flex items-center justify-between"
                                     >
-                                        <div class="-mt-6">
-                                            <div>
-                                                <span
-                                                    class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-[#F6661A] to-[#ff9100] ]"
-                                                >
-                                                    <component
-                                                        :is="feature.icon"
-                                                        class="w-6 h-6 text-white"
-                                                        aria-hidden="true"
-                                                    />
-                                                </span>
-                                            </div>
-                                            <h3
-                                                class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                                        <div>
+                                            <span class="text-3xl font-bold"
+                                                >01.</span
                                             >
-                                                {{ feature.name }}
-                                            </h3>
-                                            <p
-                                                class="mt-5 text-base text-gray-500"
+                                            <span class="text-2xl">
+                                                Backend Development</span
                                             >
-                                                {{ feature.description }}
-                                            </p>
                                         </div>
+                                        <ChevronRightIcon
+                                            :class="
+                                                open
+                                                    ? 'rotate-[135deg] transform'
+                                                    : ' rotate-[300deg] transform'
+                                            "
+                                            class="w-8 h-8"
+                                        />
                                     </div>
-                                </div>
-                            </div>
+                                </DisclosureButton>
+                                <DisclosurePanel>No</DisclosurePanel>
+                            </Disclosure>
+
+                            <Disclosure v-slot="{ open }">
+                                <!-- Use the `open` state to conditionally change the direction of an icon. -->
+                                <DisclosureButton class="py-2">
+                                    <div
+                                        class="flex items-center justify-between"
+                                    >
+                                        <div>
+                                            <span class="text-3xl font-bold"
+                                                >02.</span
+                                            >
+                                            <span class="text-2xl">
+                                                Data Scraping</span
+                                            >
+                                        </div>
+                                        <ChevronRightIcon
+                                            :class="
+                                                open
+                                                    ? 'rotate-[135deg] transform'
+                                                    : ' rotate-[300deg] transform'
+                                            "
+                                            class="w-8 h-8"
+                                        />
+                                    </div>
+                                </DisclosureButton>
+                                <DisclosurePanel>No</DisclosurePanel>
+                            </Disclosure>
+                            <Disclosure v-slot="{ open }">
+                                <!-- Use the `open` state to conditionally change the direction of an icon. -->
+                                <DisclosureButton class="py-2">
+                                    <div
+                                        class="flex items-center justify-between"
+                                    >
+                                        <div>
+                                            <span class="text-3xl font-bold"
+                                                >03.</span
+                                            >
+                                            <span class="text-2xl">
+                                                System Design</span
+                                            >
+                                        </div>
+                                        <ChevronRightIcon
+                                            :class="
+                                                open
+                                                    ? 'rotate-[135deg] transform'
+                                                    : ' rotate-[300deg] transform'
+                                            "
+                                            class="w-8 h-8"
+                                        />
+                                    </div>
+                                </DisclosureButton>
+                                <DisclosurePanel>No</DisclosurePanel>
+                            </Disclosure>
                         </div>
                     </div>
                 </div>
@@ -66,8 +122,15 @@
 </template>
 
 <script>
-import { defineComponent, h } from 'vue'
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
+import { defineComponent, h, ref } from 'vue'
+import {
+    Popover,
+    PopoverButton,
+    PopoverPanel,
+    Disclosure,
+    DisclosureButton,
+    DisclosurePanel,
+} from '@headlessui/vue'
 import {
     CloudUploadIcon,
     CogIcon,
@@ -110,10 +173,15 @@ export default {
         ExternalLinkIcon,
         MenuIcon,
         XIcon,
+        Disclosure,
+        DisclosureButton,
+        DisclosurePanel,
     },
     setup() {
+        const open = ref(false)
         return {
             features,
+            open,
         }
     },
 }

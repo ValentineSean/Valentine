@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-white">
+    <div class="my-16">
         <main>
             <div class="relative">
                 <div class="lg:mx-auto lg:items-start">
                     <div
-                        class="relative px-4 mx-auto sm:max-w-7xl sm:px-6 lg:px-0"
+                        class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-0"
                     >
                         <div class="pt-12 sm:pt-16 lg:pt-20">
                             <h2
@@ -62,12 +62,12 @@
                             </h2>
                             <div class="mb-8 lg:items-center">
                                 <div
-                                    class="mt-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2"
+                                    class="grid grid-cols-2 mt-12 md:grid-cols-3 lg:mt-0 lg:grid-cols-4"
                                 >
                                     <div
                                         v-for="logo in logos"
                                         :key="logo.name"
-                                        class="flex justify-center col-span-1 px-8 py-8 bg-gray-50"
+                                        class="flex justify-center col-span-1 px-8 py-8 border bg-gray-50"
                                     >
                                         <img
                                             class="max-h-12"

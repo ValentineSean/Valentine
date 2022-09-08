@@ -2,8 +2,8 @@
     <main>
         <Header id="header" />
         <Services id="services" />
-        <About id="about" />
         <Projects id="projects" />
+        <About id="about" />
         <Footer id="footer" class="mt-16" />
     </main>
 </template>

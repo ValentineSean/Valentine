@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="bg-white border border-t-2">
+        <div class="bg-black">
             <div
                 class="max-w-md py-24 mx-auto sm:max-w-3xl sm:py-32 lg:max-w-7xl"
             >
@@ -11,7 +11,7 @@
                     >
                         <h2
                             id="contact-heading"
-                            class="text-2xl font-extrabold text-warm-gray-900 sm:text-3xl"
+                            class="text-2xl font-extrabold text-white sm:text-3xl"
                         >
                             Get in touch
                         </h2>
@@ -22,12 +22,10 @@
                                 v-for="item in contactDetails"
                                 :key="item.name"
                             >
-                                <h3
-                                    class="text-lg font-medium text-warm-gray-900"
-                                >
+                                <h3 class="text-lg font-medium text-white">
                                     {{ item.name }}
                                 </h3>
-                                <dl class="mt-2 text-base text-warm-gray-500">
+                                <dl class="mt-2 text-base text-white">
                                     <div>
                                         <dt class="sr-only">Email</dt>
                                         <dd>
