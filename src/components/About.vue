@@ -1,5 +1,5 @@
 <template>
-    <div class="px-8 my-16">
+    <div class="px-8">
         <main>
             <div class="relative">
                 <div class="lg:mx-auto lg:items-start">
@@ -65,21 +65,19 @@
                             </h2>
                             <div class="mb-8 text-2xl lg:items-center">
                                 <div
-                                    class="grid grid-cols-2 mt-12 md:grid-cols-3 lg:mt-0 lg:grid-cols-4"
+                                    class="grid grid-cols-2 mt-12 md:grid-cols-3 gap-7 lg:mt-0 lg:grid-cols-4"
                                 >
                                     <div
                                         v-for="logo in logos"
                                         :key="logo.name"
-                                        class="flex items-center justify-center col-span-1 px-8 py-8 border border-gray-200 group bg-gray-50"
+                                        class="flex items-center justify-start col-span-1 px-8 py-8 space-x-8 border border-gray-200 group bg-gray-50"
                                     >
                                         <img
-                                            class="duration-500 ease-in-out transform group-hover:hidden max-h-12"
+                                            class="duration-500 ease-in-out transform max-h-12 grayscale-0"
                                             :src="logo.url"
                                             :alt="logo.name"
                                         />
-                                        <div
-                                            class="hidden text-xl font-bold group-hover:block"
-                                        >
+                                        <div class="text-xl font-medium">
                                             {{ logo.name }}
                                         </div>
                                     </div>
