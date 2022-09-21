@@ -27,7 +27,7 @@
                         </div>
 
                         <!-- Stats section -->
-                        <div class="pb-8 mt-10">
+                        <div class="pb-16 mt-10">
                             <h2
                                 class="my-16 text-xl font-semibold tracking-tight text-[#F2F5EA] md:text-2xl"
                             >

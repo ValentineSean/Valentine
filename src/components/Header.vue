@@ -5,7 +5,7 @@
         >
             <Popover>
                 <nav
-                    class="relative flex items-center justify-between px-4 pb-2 mx-auto border-b border-gray-300 lg:px-6 max-w-7xl"
+                    class="relative flex items-center justify-between px-4 pb-4 mx-auto border-b border-gray-300 lg:px-6 max-w-7xl"
                     aria-label="Global"
                 >
                     <div class="flex items-center justify-between flex-1">
@@ -47,7 +47,7 @@
                         <div class="hidden md:flex">
                             <a
                                 href="#footer"
-                                class="inline-flex items-center px-4 py-2 text-sm font-bold text-gray-700 border-2 border-transparent border-gray-700 hover:text-[#F2F5EA] hover:bg-orange-700"
+                                class="inline-flex items-center px-4 py-2 text-sm font-bold text-gray-700 border-2 border-transparent border-gray-700 hover:text-[#F2F5EA] hover:bg-blue-700"
                             >
                                 Contact Me
                             </a>
@@ -145,7 +145,7 @@
 
                         <a
                             href="#projects"
-                            class="inline-flex items-center px-16 py-4 mt-16 lg:mt-24 text-sm font-bold text-[#F2F5EA] bg-black hover:text-[#F2F5EA] hover:bg-orange-700"
+                            class="inline-flex items-center px-16 py-4 mt-16 lg:mt-24 text-sm font-bold text-[#F2F5EA] bg-black hover:text-[#F2F5EA] hover:bg-blue-700"
                         >
                             My Work
                         </a>
