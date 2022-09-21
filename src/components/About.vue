@@ -1,19 +1,17 @@
 <template>
-    <div class="px-8">
-        <main>
+    <div>
+        <main class="px-4 mt-8 bg-black md:px-8">
             <div class="relative">
                 <div class="lg:mx-auto lg:items-start">
-                    <div
-                        class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-0"
-                    >
+                    <div class="relative mx-auto max-w-7xl sm:px-6 lg:px-0">
                         <div class="pt-12 sm:pt-16 lg:pt-20">
                             <h2
-                                class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl"
+                                class="text-2xl font-extrabold tracking-tight text-[#F2F5EA] md:text-3xl sm:text-5xl"
                             >
                                 About Me
                             </h2>
-                            <div class="mt-6 space-y-6 text-gray-500">
-                                <p class="text-2xl">
+                            <div class="mt-6 space-y-6 text-[#F2F5EA]">
+                                <p class="text-lg md:text-2xl">
                                     - I'm an ambitious backend Software
                                     Developer with a knack for solving complex
                                     problems.
@@ -29,9 +27,9 @@
                         </div>
 
                         <!-- Stats section -->
-                        <div class="mt-10">
+                        <div class="pb-8 mt-10">
                             <h2
-                                class="my-16 text-2xl font-semibold tracking-tight text-gray-900"
+                                class="my-16 text-xl font-semibold tracking-tight text-[#F2F5EA] md:text-2xl"
                             >
                                 My Experience
                             </h2>
@@ -39,55 +37,57 @@
                                 <div
                                     v-for="stat in stats"
                                     :key="stat.label"
-                                    class="pt-6 border-t border-gray-200"
+                                    class="pt-6 border-t border-gray-700"
                                 >
                                     <dt
-                                        class="text-xl font-medium text-gray-500"
+                                        class="text-lg font-medium text-[#F2F5EA] md:text-xl"
                                     >
                                         {{ stat.label }}
                                     </dt>
                                     <dd
-                                        class="text-xl font-medium tracking-tight text-gray-900"
+                                        class="text-base font-medium tracking-tight text-[#F2F5EA] md:text-xl"
                                     >
                                         {{ stat.value }}
                                     </dd>
                                     <dd
-                                        class="text-xl font-medium tracking-tight text-gray-900"
+                                        class="text-base font-medium tracking-tight text-[#F2F5EA] md:text-xl"
                                     >
                                         {{ stat.company }}
                                     </dd>
                                 </div>
                             </dl>
-                            <h2
-                                class="my-16 text-2xl font-semibold tracking-tight text-gray-900"
-                            >
-                                My Tools & Skills
-                            </h2>
-                            <div class="mb-8 text-2xl lg:items-center">
-                                <div
-                                    class="grid grid-cols-2 mt-12 md:grid-cols-3 gap-7 lg:mt-0 lg:grid-cols-4"
-                                >
-                                    <div
-                                        v-for="logo in logos"
-                                        :key="logo.name"
-                                        class="flex items-center justify-start col-span-1 px-8 py-8 space-x-8 border border-gray-200 group bg-gray-50"
-                                    >
-                                        <img
-                                            class="duration-500 ease-in-out transform max-h-12 grayscale-0"
-                                            :src="logo.url"
-                                            :alt="logo.name"
-                                        />
-                                        <div class="text-xl font-medium">
-                                            {{ logo.name }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <div class="px-4 mx-auto mt-10 lg:px-0 sm:px-8 md:mt-16 max-w-7xl">
+            <h2
+                class="text-2xl font-extrabold tracking-tight text-gray-900 md:text-3xl sm:text-5xl"
+            >
+                My Tools & Skills
+            </h2>
+            <div class="mt-8 mb-8 text-2xl lg:items-center">
+                <div
+                    class="grid grid-cols-2 gap-[5px] mt-12 md:grid-cols-3 md:gap-7 lg:mt-0 lg:grid-cols-4"
+                >
+                    <div
+                        v-for="logo in logos"
+                        :key="logo.name"
+                        class="flex items-center justify-start col-span-1 px-8 py-8 space-x-8 border border-gray-200 group bg-gray-50"
+                    >
+                        <img
+                            class="duration-500 ease-in-out transform max-h-12 grayscale-0"
+                            :src="logo.url"
+                            :alt="logo.name"
+                        />
+                        <div class="text-lg font-medium md:text-xl">
+                            {{ logo.name }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

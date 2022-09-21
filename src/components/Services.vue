@@ -1,21 +1,21 @@
 <template>
     <div class="mt-16 bg-black">
-        <div class="relative px-8 overflow-hidden">
+        <div class="relative px-4 overflow-hidden">
             <main>
                 <!-- Feature section with grid -->
-                <div
-                    class="relative px-4 py-16 bg-black lg:px-0 sm:py-24 lg:py-32"
-                >
+                <div class="relative py-16 bg-black lg:px-0 sm:py-24 lg:py-32">
                     <div
-                        class="flex flex-col items-center mx-auto md:space-x-8 max-w-7xl md:flex-row"
+                        class="flex flex-col items-start mx-auto md:items-center sm:space-x-8 max-w-7xl md:flex-row"
                     >
                         <div class="flex flex-col items-start lg:w-1/2">
                             <p
-                                class="mt-2 text-3xl font-extrabold tracking-tight text-[#F2F5EA] sm:text-5xl"
+                                class="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight text-[#F2F5EA]"
                             >
                                 What Services Do I Provide
                             </p>
-                            <p class="mt-5 text-2xl text-[#F2F5EA] max-w-prose">
+                            <p
+                                class="mt-5 text-lg md:text-2xl text-[#F2F5EA] max-w-prose"
+                            >
                                 Just tell me what you need
                             </p>
                             <a
@@ -40,10 +40,11 @@
                                         class="flex items-center justify-between"
                                     >
                                         <div>
-                                            <span class="text-3xl font-bold"
+                                            <span
+                                                class="text-2xl font-bold md:text-3xl"
                                                 >01.</span
                                             >
-                                            <span class="text-2xl">
+                                            <span class="text-lg md:text-2xl">
                                                 Backend Development</span
                                             >
                                         </div>
@@ -67,10 +68,11 @@
                                         class="flex items-center justify-between"
                                     >
                                         <div>
-                                            <span class="text-3xl font-bold"
+                                            <span
+                                                class="text-2xl font-bold md:text-3xl"
                                                 >02.</span
                                             >
-                                            <span class="text-2xl">
+                                            <span class="text-lg md:text-2xl">
                                                 Data Scraping</span
                                             >
                                         </div>
@@ -93,10 +95,11 @@
                                         class="flex items-center justify-between"
                                     >
                                         <div>
-                                            <span class="text-3xl font-bold"
+                                            <span
+                                                class="text-2xl font-bold md:text-3xl"
                                                 >03.</span
                                             >
-                                            <span class="text-2xl">
+                                            <span class="text-lg md:text-2xl">
                                                 Systems Design</span
                                             >
                                         </div>
