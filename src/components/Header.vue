@@ -45,7 +45,7 @@
                         <div class="hidden md:flex">
                             <a
                                 href="#footer"
-                                class="inline-flex items-center px-4 py-2 text-sm font-bold text-gray-700 border-2 border-transparent border-gray-700 hover:text-[#F2F5EA] hover:bg-blue-700"
+                                class="inline-flex items-center px-4 py-2 text-sm font-bold bg-black text-white border-2 border-transparent border-gray-700 hover:text-[#F2F5EA] hover:bg-blue-700"
                             >
                                 Contact Me
                             </a>
@@ -106,7 +106,7 @@
                             </div>
                             <a
                                 href="#footer"
-                                class="block w-full px-5 py-3 font-medium text-center text-[#F2F5EA] bg-gray-700 hover:bg-gray-100 hover:text-gray-700"
+                                class="block w-full px-5 py-3 font-medium text-center text-white bg-black hover:bg-gray-100 hover:text-gray-700"
                             >
                                 Contact Me
                             </a>
