@@ -77,7 +77,7 @@
                         class="flex items-center justify-start col-span-1 px-8 py-8 space-x-8 border border-gray-200 group bg-gray-50"
                     >
                         <img
-                            class="duration-500 ease-in-out transform max-h-12 grayscale-0"
+                            class="hidden duration-500 ease-in-out transform sm:block max-h-12 grayscale-0"
                             :src="logo.url"
                             :alt="logo.name"
                         />
